@@ -7,20 +7,20 @@ import { useState } from "react";
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 return(
-    <nav className="fixed top-0 left-0 w-full bg-sage-600 text-white z-50">
+    <nav className="fixed top-0 left-0 w-full bg-sage-300 text-white z-50 py-2">
         <div className="container mx-auto flex items-center">
-            <ul className="hidden md:flex flex-1 justify-center space-x-8">
+            <ul className="hidden md:flex flex-1 justify-center space-x-16">
                 <li>
-                    <Link href="/" className="text-white hover:text-green-600 hover:underline font-serif ">Home</Link>
+                    <Link href="/" className="text-white hover:text-green-900 hover:underline font-serif ">Home</Link>
                 </li>
                 <li>
-                    <Link href="/about" className="text-white hover:text-green-600 hover:underline font-serif">About</Link>
+                    <Link href="/about" className="text-white hover:text-green-900 hover:underline font-serif">About</Link>
                 </li>
                 <li>
-                    <Link href="/contact" className="text-white hover:text-green-600 hover:underline font-serif">BMI checker</Link>
+                    <Link href="/contact" className="text-white hover:text-green-900 hover:underline font-serif">BMI checker</Link>
                 </li>
                 <li>
-                    <Link href="/contact" className="text-white hover:text-green-600 hover:underline font-serif">Features</Link>
+                    <Link href="/contact" className="text-white hover:text-green-900 hover:underline font-serif">Features</Link>
                 </li>
             </ul>
             <div className="md:hidden">
@@ -34,7 +34,7 @@ return(
             </div>
             {/* mobile menu */}
             {isOpen && (
-                <ul className="flex flex-col space-y-2 mt-2 bg-sage-500 p-4 md:hidden">
+                <ul className="flex flex-col space-y-2 mt-2 bg-sage-300 p-4 md:hidden">
                     <li>
                         <Link href="/" className="text-white font-serif hover:text-green-600">Home</Link>
                     </li>
@@ -50,3 +50,11 @@ return(
     </nav>
 )
 };
+
+
+
+
+
+
+
+
