@@ -39,12 +39,15 @@ return(
                         <Link href="/" className="text-white font-serif hover:text-green-600">Home</Link>
                     </li>
                     <li>
-                        <Link href="/about" className="text-white font-serif hover:text-green-600">Calculator</Link>
+                        <Link href="/about" className="text-white font-serif hover:text-green-600">About</Link>
                     </li>
                     <li>
-                        <Link href="/contact" className="text-white font-serif hover:text-green-600">About</Link>
+                        <Link href="/contact" className="text-white font-serif hover:text-green-600">BMI checker</Link>
                     </li>
-        </ul>
+                    <li>
+                        <Link href="/contact" className="text-white font-serif hover:text-green-600">Features</Link>
+                    </li>
+                </ul>
             )}
         </div>
     </nav>
