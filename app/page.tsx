@@ -11,7 +11,13 @@ return(
             style={{ objectFit: 'cover' }}
             priority
         />
-        <HeroSection />
+        <HeroSection 
+            tagline="Gentle guidance for real bodies"
+            title="GENTLE GUIDANCE FOR"
+            titleHighlight="Real Bodies"
+            subtitle="Understand your body, not judge it."
+            showButton={true}
+        />
     
     </div>
 )
