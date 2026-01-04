@@ -20,13 +20,13 @@ export default function HeroSection({
 }: HeroSectionProps) {
     const positionClasses = position === "center" 
         ? "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-        : "relative pt-20 pb-12";
+        : "relative pt-4 pb-2 md:pt-6 md:pb-3 lg:pt-8 lg:pb-4";
     
     return(
         <main className={positionClasses}>
             <div className="flex flex-col justify-center items-center p-4 bg-opacity-75 rounded-lg text-center">
                 <p className="text-sage-500 font-light  mb-4">{tagline}</p>
-                <h3 className="text-5xl text-olive-green font-bold font-serif">
+                <h3 className="text-3xl md:text-4xl lg:text-5xl text-olive-green font-bold font-serif">
                     {title}
                     <span className="text-cyan-950 block">{titleHighlight}</span>
                 </h3>

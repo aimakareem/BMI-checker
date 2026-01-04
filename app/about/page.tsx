@@ -7,7 +7,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { PiFlowerTulipDuotone } from "react-icons/pi";
 export default function AboutPage() {
     return(
-        <div className="">
+        <div className="relative min-h-screen">
             <Image
                         src="/assets/gray-bg.jpg"
                         alt="Healthy Food Background"
@@ -15,7 +15,7 @@ export default function AboutPage() {
                         style={{ objectFit: 'cover' }}
                         priority
                     />
-            <div className="relative z-10">
+            <div className="relative z-10 flex flex-col min-h-full">
                 <HeroSection 
                             tagline="GENTLE GUIDANCE FOR REAL BODIES"
                             title="Health,without"
@@ -24,8 +24,8 @@ export default function AboutPage() {
                             position="top"
                 />   
                 
-                <div className="">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div className="flex-1 p-4 pb-16 md:pb-24 lg:pb-32">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
                         <AboutPageCard
                             icon={ LuBrain }
                             title="Our Philosophy"
