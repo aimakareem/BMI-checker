@@ -3,11 +3,11 @@ import Image from "next/image";
 import HeroSection from "@/components/HeroSection"; 
 import AboutPageCard from "@/components/AboutPageCard";
 import { LuBrain } from "react-icons/lu";
-import { FaRegHeart } from "react-icons/fa";
-import { PiFlowerTulipDuotone } from "react-icons/pi";
+import { FaHeart } from "react-icons/fa";
+import { TbFlowerFilled } from "react-icons/tb";
 export default function AboutPage() {
     return(
-        <div className="relative min-h-screen">
+        <div className="relative min-h-screen pt-16">
             <Image
                         src="/assets/gray-bg.jpg"
                         alt="Healthy Food Background"
@@ -30,16 +30,19 @@ export default function AboutPage() {
                             icon={ LuBrain }
                             title="Our Philosophy"
                             description="In a world full of diet noise, we believe in finding peace through understanding. Health isn't about punishment or perfection—it's about gentle guidance and self-compassion on your journey"
+                            color="text-blue-600"
                         />
                         <AboutPageCard
-                            icon={ FaRegHeart }
+                            icon={ FaHeart }
                             title="Your Wellness"
                             description="We provide tools to understand your body without judgment. From BMI tracking to nutrition guidance, everything is designed to support your unique path to wellness, not compare you to others"
+                            color="text-green-500"
                         />
                         <AboutPageCard
-                            icon={ PiFlowerTulipDuotone }
+                            icon= { TbFlowerFilled }
                             title="Real Bodies"
                             description="Every body is different. Our approach celebrates this diversity and helps you discover what works for YOU—not what trends demand or society expects. Your journey, your pace, your choices."
+                            color="text-pink-500"
                         />
                 
                     </div>
