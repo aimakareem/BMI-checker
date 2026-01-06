@@ -20,7 +20,7 @@ return(
                     <Link href="/contact" className="text-white hover:text-green-900 hover:underline font-serif">BMI checker</Link>
                 </li>
                 <li>
-                    <Link href="/contact" className="text-white hover:text-green-900 hover:underline font-serif">Features</Link>
+                    <Link href="/features" className="text-white hover:text-green-900 hover:underline font-serif">Features</Link>
                 </li>
             </ul>
             <div className="md:hidden">
@@ -45,7 +45,7 @@ return(
                         <Link href="/contact" className="text-white font-serif hover:text-green-600">BMI checker</Link>
                     </li>
                     <li>
-                        <Link href="/contact" className="text-white font-serif hover:text-green-600">Features</Link>
+                        <Link href="/features" className="text-white font-serif hover:text-green-600">Features</Link>
                     </li>
                 </ul>
             )}
