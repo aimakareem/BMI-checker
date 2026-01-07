@@ -1,6 +1,7 @@
 import link from "next/link";   
 import Image from "next/image";   
 import HeroSection from "../components/HeroSection";
+import Footer from "@/components/Footer";
 export default function Homepage() {
 return(
     <div className="relative h-screen">
@@ -18,7 +19,7 @@ return(
             subtitle="Understand your body, not judge it."
             showButton={true}
         />
-    
+        <Footer />
     </div>
 )
 }

@@ -2,32 +2,38 @@ import Link from "next/link";
 import Image from "next/image";
 import HeroSection from "@/components/HeroSection"; 
 import AboutPageCard from "@/components/AboutPageCard";
+import FeatureFooter from "@/components/FeatureFooter";
 import { FaAppleAlt } from "react-icons/fa";
 import { GiThreeLeaves } from "react-icons/gi";
 import { FaBowlFood } from "react-icons/fa6";
-import { PiFlowerTulipDuotone } from "react-icons/pi";
+
 export default function FeaturesPage() {
-    return(
+    return (
         <div className="relative min-h-screen pt-16">
+            {/* Background Image */}
             <Image
-                        src="/assets/gray-bg.jpg"
-                        alt="Healthy Food Background"
-                        fill
-                        style={{ objectFit: 'cover' }}
-                        priority
-                    />
+                src="/assets/gray-bg.jpg"
+                alt="Healthy Food Background"
+                fill
+                style={{ objectFit: 'cover' }}
+                priority
+            />
+
+            {/* Page Content */}
             <div className="relative z-10 flex flex-col min-h-full">
-                <HeroSection 
-                            
-                            tagline="GENTLE GUIDANCE FOR REAL BODIES"
-                            title="Long-term wellness,"
-                            titleHighlight="one gentle step at a time."
-                            subtitle="Discover wholesome tools designed to support your unique journey to health."
-                            position="top"
-                />   
                 
+                {/* Hero Section */}
+                <HeroSection 
+                    tagline="GENTLE GUIDANCE FOR REAL BODIES"
+                    title="Long-term wellness,"
+                    titleHighlight="one gentle step at a time."
+                    subtitle="Discover wholesome tools designed to support your unique journey to health."
+                    position="top"
+                />   
+
+                {/* Features Grid */}
                 <div className="flex-1 p-4 pb-16 md:pb-24 lg:pb-32">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
                         <AboutPageCard
                             icon={ FaAppleAlt }
                             title="Calorie Checker"
@@ -46,17 +52,16 @@ export default function FeaturesPage() {
                             description="Every body is different. Our approach celebrates this diversity and helps you discover what works for YOU—not what trends demand or society expects. Your journey, your pace, your choices."
                             color="text-green-600"
                         />
-                
                     </div>
+
+                </div>
+                <div className="mb-4">
+                    <FeatureFooter />
                 </div>
             </div>
         </div>
-    )
-
-    
+    );
 }
-
-
 
 
 
