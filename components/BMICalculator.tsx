@@ -208,34 +208,15 @@ return (
             <button
                 type="button"
                 onClick={resetCalculator}
-                className="px-8 py-4 bg-white bg-opacity-5 text-gray-300 rounded-xl font-semibold hover:bg-white hover:bg-opacity-10 transition-all duration-300 border border-sage-300 border-opacity-20"
+                className="px-8 py-4 bg-sage-200 bg-opacity-5 text-sage-500 rounded-xl font-semibold hover:bg-white hover:bg-opacity-10 transition-all duration-300 border border-sage-300 border-opacity-20"
             >
                 Reset
             </button>
             </div>
         </form>
 
-          {/* Result Display */}
-        {result && (
-            <div className="mt-8 p-6 md:p-8 bg-white bg-opacity-5 rounded-2xl border-2 border-sage-500 border-opacity-30 animate-fadeIn">
-            <div className="text-center">
-                <p className="text-sage-300 text-sm md:text-base mb-2">
-                Your BMI Score
-                </p>
-                <div className={`text-5xl md:text-7xl font-bold mb-4 ${result.color}`}>
-                {result.bmi.toFixed(1)}
-                </div>
-                <div className={`text-2xl md:text-3xl font-bold mb-4 ${result.color}`}>
-                {result.category}
-                </div>
-                <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-                {result.description}
-                </p>
-            </div>
-
-            <BMIResult/>
-            </div>
-        )}
+                    {/* Result Display */}
+                {result && <BMIResult result={result} />}
         </div>
     </div>
     </div>
