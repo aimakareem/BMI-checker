@@ -6,8 +6,8 @@ interface HeroSectionProps {
     title: string;
     titleHighlight: string;
     subtitle: string;
-    showButton?: boolean;  // Optional - default false
-    position?: "center" | "top"; // Optional - default center
+    showButton?: boolean;  
+    position?: "center" | "top"; 
 }
 
 export default function HeroSection({ 
@@ -32,7 +32,7 @@ export default function HeroSection({
                 </h3>
                 <p className="text-sage-500 font-light mt-4">{subtitle}</p>
                 
-                {/* Button sirf Home Page pe show hoga */}
+            
                 {showButton && (
                     <Link href="/about">
                         <button className="mt-6 px-6 py-2 bg-olive-green text-white rounded-full hover:bg-green-900 hover:scale-105 transition-all duration-300 font-serif">
