@@ -34,7 +34,7 @@ export default function HeroSection({
                 
                 {/* Button sirf Home Page pe show hoga */}
                 {showButton && (
-                    <Link href="/">
+                    <Link href="/about">
                         <button className="mt-6 px-6 py-2 bg-olive-green text-white rounded-full hover:bg-green-900 hover:scale-105 transition-all duration-300 font-serif">
                             Start your journey
                         </button>
